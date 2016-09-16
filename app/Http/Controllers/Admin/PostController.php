@@ -66,12 +66,10 @@ class PostController extends Controller
 		$post->short_description = Request::get('short_description');
 		$post->description = Request::get('description');
 
-		$url = '';
 		if ($file) {
 			$url = $this->saveImage($file);
+			$post->image_url = $url;
 		}
-
-		$post->image_url = $url;
 
 		$validator = Validator::make(Request::all(), $rules);
 
