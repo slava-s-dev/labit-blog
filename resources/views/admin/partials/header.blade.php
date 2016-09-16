@@ -26,6 +26,12 @@
                                 Добавить статью
                             </a>
                         </li>
+                        <li>
+                            <a href="/">
+                                <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                                Вернуться на главную страницу сайта
+                            </a>
+                        </li>
                     </ul>
                     @if(Sentinel::check())
                         <ul class="nav navbar-nav navbar-right">

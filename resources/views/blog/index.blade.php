@@ -10,16 +10,7 @@
     <!--home_content!-->
     <div class="container">
 
-    {{--<div class="row">--}}
-    {{--<div class="col-lg-12">--}}
-
-    {{--<ol class="breadcrumb">--}}
-    {{--<li><a href="/">Главная</a></li>--}}
-    {{--<li class="active">Новости</li>--}}
-    {{--</ol>--}}
-    {{--</div>--}}
-    {{--</div>--}}
-    <!-- /.row -->
+        @if (count($posts))
         <div class="block">
             <div class="block-content">
                 <h1>Статьи</h1>
@@ -82,7 +73,11 @@
             </ul>
         </div>
         <!-- /.row -->
+        @else
 
+            <h2> К сожалению статей пока нет </h2>
+
+        @endif
         {{--<hr>--}}
 
     </div>
